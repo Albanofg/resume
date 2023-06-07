@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    padding-inline: 0.3rem;
+}
+
+.active{
+    padding-inline: 0.3rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    background-color: rgb(165, 122, 79);
+    color: rgb(3, 1, 27);
+    text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10rem;
+  background: rgb(20, 18, 17);
+}
+
+.logo-nav{
+    width: 9rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.toggler {
+  display: none;
+}
+.toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 40vw;
+    background: rgb(20, 18, 17);
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+  .logo-nav{
+    width: 6rem;
+  }
+}
+
+.menu-active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
