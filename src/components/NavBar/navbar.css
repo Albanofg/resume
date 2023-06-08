@@ -10,17 +10,19 @@ li {
 }
 
 a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgb(204, 204, 204);
-    padding-inline: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  padding-inline: 0.3rem;
 }
 
 .active{
     padding-inline: 0.3rem;
     padding-bottom: 0.5rem;
     align-items: center;
-    background-color: rgb(165, 122, 79);
+    background-color: rgb(196, 156, 116);
     color: rgb(3, 1, 27);
     text-decoration: none;
 }
@@ -35,6 +37,7 @@ a {
 
 .logo-nav{
     width: 9rem;
+    background-color: rgb(20, 18, 17);
 }
 
 .menu {
@@ -64,8 +67,8 @@ a {
     top: 7vh;
     right: 0;
     height: 93vh;
-    width: 40vw;
-    background: rgb(20, 18, 17);
+    width: 50vw;
+    background: rgba(20, 18, 17, 0.589);
     flex-direction: column;
     justify-content: center;
     transform: translateX(100%);

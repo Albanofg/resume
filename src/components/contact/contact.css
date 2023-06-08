@@ -1,0 +1,79 @@
+
+
+.contact-info{
+  background-color: rgb(20, 18, 17);
+  min-height: 82.9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  padding: 0 20px;   
+}
+
+.ext-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 30px);
+  height: 200px;
+  color: rgb(27, 18, 11);
+  background-color: rgb(165, 122, 80);
+  box-shadow: rgb(204, 204, 204) 3px 3px 0px, rgb(204, 204, 204) 3px 3px 0px;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 30px;
+  background-color: rgb(20, 18, 17);
+  color: rgb(196, 156, 116);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 105px;
+  border-radius: 50%;
+  transition: 250ms linear;
+}
+
+.ext-link p{
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0;
+  min-height: 0;
+  transition: 250ms linear;
+}
+
+.ext-link:hover .card-icon{
+  color: rgb(27, 18, 11);
+  background-color: rgb(165, 122, 80);
+  transform: scale(1.5);
+}
+
+.ext-link:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-info{
+    flex-direction: column;
+    min-height: 82.8vh;
+  }
+
+  .ext-link{
+    width: 100%;
+    max-width: 320px;
+    margin: 10px 0;
+  }
+  
+}
+
+@media screen and (max-width: 560px) {
+  .ext-link p{
+    opacity: 1;
+  }
+}

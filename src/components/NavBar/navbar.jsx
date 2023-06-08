@@ -25,7 +25,7 @@ function Navbar() {
           <NavLink activeClassName='active' to='/about'>about</NavLink>
         </li>
         <li>
-          <NavLink activeClassName='active' to='/contacto'>contact</NavLink>
+          <NavLink activeClassName='active' to='/contacto'>contacto</NavLink>
         </li>
         <li>
           <NavLink activeClassName='active' to='/gallery'>gallery</NavLink>
