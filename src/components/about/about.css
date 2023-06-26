@@ -1,0 +1,30 @@
+.about{
+  display: grid;  
+  min-height: 82.8vh;
+  background-color: rgb(20, 18, 17);
+  color: rgb(206, 206, 206);
+  text-align: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "l1 r1"
+    "l2 r1";
+}
+
+.leftOne{
+  grid-area: l1;
+}
+
+.leftOne p{
+  padding: 3em 10em 0 10em;
+}
+
+.leftTwo{
+  grid-area: l2;
+}
+
+.rightOne{
+  grid-area: r1;
+}
+
+
