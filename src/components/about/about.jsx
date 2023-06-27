@@ -1,6 +1,10 @@
-import React from 'react'
-import './about.css'
+import React from 'react';
+import './about.css';
 import { Link } from 'react-router-dom';
+import { GrDocumentDownload } from 'react-icons/gr';
+import  CySecCert  from '../../assets/64179e4ae975eb00028b9d42.png';
+import  ReactCert  from '../../assets/634dd964d0bb0c000f95b118.png';
+import  JsCert  from '../../assets/61a4ce0809aaf70036f70ac4.png';
 
 const About = () => {
 
@@ -15,19 +19,44 @@ const About = () => {
       </article>
       
       <article className='leftTwo'>
-        <Link to="/CV23.pdf" target="_blank" download>
-          Descarga
+        <Link className='dBtn' to="/CV23.pdf" target="_blank" download>
+          <i className='dIcon'><GrDocumentDownload/></i>
+          <p>DESCARGA MI CV</p>
         </Link>
       </article>
       
       <article className='rightOne'>
-        <h2>Article 3</h2>
-        <p>This is the third article.</p>
-      </article>
+        
+        <ul className='certificados'>
 
+          <h2>Certificados</h2>
+          
+          <li className='diplo'>
+            <h4>Ciberseguridad</h4>
+            <Link to='https://www.coderhouse.com/certificados/64179e4ae975eb00028b9d42' target='blank'>
+              <img className='imgDiplo' src={CySecCert} alt='Ciberseguridad'/>
+            </Link>
+          </li>
+          
+          <li className='diplo'>
+            <h4>React JS</h4>
+            <Link to='https://www.coderhouse.com/certificados/634dd964d0bb0c000f95b118' target='blank'>
+              <img className='imgDiplo' src={ReactCert} alt='ReactJS'/>
+            </Link>
+          </li>
+          
+          <li className='diplo'>
+            <h4>Javascript</h4>
+            <Link to='https://www.coderhouse.com/certificados/61a4ce0809aaf70036f70ac4' target='blank'>
+              <img className='imgDiplo' src={JsCert} alt='Javascript'/>
+            </Link>
+          </li>
+        
+        </ul>
+      </article>
     </div>
-    
   )
 }
+
 
 export default About

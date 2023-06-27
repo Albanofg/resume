@@ -3,6 +3,8 @@ import React from 'react'
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BiMailSend } from "react-icons/bi";
 import { AiTwotonePhone } from "react-icons/ai";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { BsGithub } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -11,7 +13,7 @@ const Contact = () => {
              
           <a className='ext-link' href='http://wa.me/+543407411721' target="_blank" rel="noreferrer">
             <i className='card-icon'><IoLogoWhatsapp/> </i>
-            <p>whatsapp</p>
+            <p>WhatsApp</p>
           </a>
 
           <a className='ext-link' href='mailto:albanofgonzalez@gmail.com' target="_blank" rel="noreferrer">
@@ -21,13 +23,21 @@ const Contact = () => {
         
           <a className='ext-link' href='tel:+543407411721' target="_blank" rel="noreferrer">
             <i className='card-icon'><AiTwotonePhone/></i>
-            <p>tel +54 3407 411721</p>
+            <p>Tel +54 3407 411721</p>
+          </a>
+
+          <a className='ext-link' href='https://www.linkedin.com/in/albano-gonzalez-8a3492226/' target="_blank" rel="noreferrer">
+            <i className='card-icon'><SlSocialLinkedin/></i>
+            <p>LinkedIn</p>
+          </a>
+          
+          <a className='ext-link' href='https://github.com/Albanofg' target="_blank" rel="noreferrer">
+            <i className='card-icon'><BsGithub/></i>
+            <p>GitHub</p>
           </a>
 
     </div>
   )
-        
-
 }
 
       

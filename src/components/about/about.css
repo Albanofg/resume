@@ -13,18 +13,120 @@
 
 .leftOne{
   grid-area: l1;
+  padding-top: 2;
 }
 
 .leftOne p{
-  padding: 3em 10em 0 10em;
+  padding: 2em 2em 1em 2em;
 }
 
 .leftTwo{
   grid-area: l2;
+  display: grid;
+  justify-content: center;
 }
 
 .rightOne{
   grid-area: r1;
+  padding-top: 2;
 }
 
+.dBtn{
+  display: grid;
+  justify-items: center;
+  text-decoration: none;
+  width: 12em;
+  height: 12em;
+  color: rgb(27, 18, 11);
+  background-color: rgb(165, 122, 80);
+  box-shadow: rgb(204, 204, 204) 3px 3px 0px, rgb(204, 204, 204) 3px 3px 0px;
+  cursor: pointer;
+}
 
+.dBtn p{
+  margin-bottom: 15px;
+  font-weight: 750;
+  letter-spacing: 1px;
+  opacity: 0;
+  min-height: 0;
+  transition: 250ms linear;
+}
+
+.dBtn:hover .dIcon{
+  color: rgb(27, 18, 11);
+  background-color: rgba(165, 122, 80, 0);
+  transform: scale(1.5);
+}
+
+.dBtn:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+.dIcon{
+  font-size: 35px;
+  margin-top: 35px;
+  background-color: rgb(165,122,80);
+  color: rgb(20, 18, 17);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 105px;
+  border-radius: 50%;
+  transition: 250ms linear;
+}
+
+.certificados {
+  display: grid;
+  justify-items: center;
+}
+
+.certificados h4{
+  padding: 0.5em 0 0.5em 0;
+}
+
+.imgDiplo{
+  max-width: 250px;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "l1"
+    "r1"
+    "l2";
+}
+}
+
+@media screen and (max-width: 700px) {
+  .leftOne {
+    padding-top: 2em;
+  }
+  .leftOne p{
+    padding: 0 2em 0 2em;
+  }
+
+  .certificados{
+    padding: 0;
+    margin-top: 12px;
+  }
+
+  .leftTwo {
+    padding: 2em 0 2em 0 ;
+  }
+
+  .dBtn {
+    height: 8em;
+    width: 8em;
+  }
+
+  .dIcon{
+    margin-top: 0;
+  }
+
+  .dBtn p{
+    opacity: 1;
+  }
+}
