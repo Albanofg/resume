@@ -22,13 +22,13 @@ function Navbar() {
       </Link>
       <ul className={active}>
         <li>
-          <NavLink activeClassName='active' to='/about'>sobre mi</NavLink>
+          <NavLink activeclassname='active' to='/about'>sobre mi</NavLink>
         </li>
         <li>
-          <NavLink activeClassName='active' to='/contacto'>contacto</NavLink>
+          <NavLink activeclassname='active' to='/contacto'>contacto</NavLink>
         </li>
         <li>
-          <NavLink activeClassName='active' to='/gallery'>portfolio</NavLink>
+          <NavLink activeclassname='active' to='/gallery'>portfolio</NavLink>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

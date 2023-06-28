@@ -1,11 +1,19 @@
 .contact-info{
   background-color: rgb(20, 18, 17);
   min-height: 82.9vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none; 
-  padding: 0 20px;   
+  display: grid;
+     
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            25rem,
+            2fr
+        )
+    );
+     
+    grid-auto-rows:auto;
+     
+    gap: 0.8rem;  
 }
 
 .ext-link{
@@ -14,9 +22,6 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 0 20px;
-  margin: 0 10px;
-  width: calc(33% - 30px);
   height: 200px;
   color: rgb(27, 18, 11);
   background-color: rgb(165, 122, 80);
@@ -59,20 +64,25 @@
 
 @media screen and (max-width: 1000px) {
   .contact-info{
-    flex-direction: column;
     min-height: 82.8vh;
   }
 
   .ext-link{
     width: 100%;
-    max-width: 320px;
     margin: 10px 0;
+    
   }
 
   .ext-link:hover .card-icon{
     transform: 0;
   }
   
+}
+
+@media screen and (max-width: 768px){
+  .contact-info{
+    padding-top: 10rem;
+  }
 }
 
 @media screen and (max-width: 560px) {
