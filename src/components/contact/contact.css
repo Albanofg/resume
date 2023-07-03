@@ -2,18 +2,15 @@
   background-color: rgb(20, 18, 17);
   min-height: 82.9vh;
   display: grid;
-     
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            25rem,
-            2fr
-        )
-    );
-     
-    grid-auto-rows:auto;
-     
-    gap: 0.8rem;  
+  grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+          18rem,
+          2fr
+      )
+  );
+  grid-auto-rows:auto;
+  gap: 3rem;  
 }
 
 .ext-link{
@@ -82,6 +79,9 @@
 @media screen and (max-width: 768px){
   .contact-info{
     padding-top: 10rem;
+    max-width: 100%;
+    gap: 3rem;
+
   }
 }
 

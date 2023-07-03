@@ -11,14 +11,16 @@
 
 @media screen and (min-height: 904px) {
     .footer {
-        opacity: 1;
-        z-index: 0;
-    }
+    opacity: 1;
+    z-index: 0;
+    height: 0.8em;
+}
     
 }
 
 @media screen and (max-width: 768px) {
     .footer {
-    opacity: 0;
+    opacity: 1;
+    height: 1.1em;
     }
 }
