@@ -85,11 +85,12 @@
     object-fit: none;
   }
   .cards{
-    width: 520px
+    width: 520px;
+    border-radius: 25px 12px 50px 12px;
   }
   .info{
     opacity: 1;
-    background-color: rgba(196, 156, 116, 0.61);
+    background-color: rgba(196, 156, 116, 0.808);
   }
 }
 
@@ -102,25 +103,25 @@
     padding: 10em 0 12em 0;
   }
   .cards{
-    max-width: 390px;
+    max-width: 350px;
     box-shadow: none;
-    overflow: auto;
-    border-radius: 2px;
+    overflow: none;
+    border-radius: 25px 12px 50px 12px;
   }
   .cards:hover{
     box-shadow: none;
   }
   .info{
-    max-width: 390px;
+    max-width: 350px;
   }
   .icon{
-    max-width: 390px;
+    max-width: 350px;
   }
   .txtInfo{
-    max-width: 390px;
+    max-width: 350px;
   }
   .imgCards{
-    max-width: 390px;
+    max-width: 350px;
     object-fit: cover;
   }
 }

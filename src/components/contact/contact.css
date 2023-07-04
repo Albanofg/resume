@@ -23,6 +23,7 @@
   height: 200px;
   color: rgb(27, 18, 11);
   background-color: rgb(165, 122, 80);
+  border-radius: 50px 5px 0 5px;
   box-shadow: rgb(204, 204, 204) 3px 3px 0px, rgb(204, 204, 204) 3px 3px 0px;
   cursor: pointer;
 }
@@ -93,5 +94,15 @@
   }
   .ext-link:hover .card-icon{
     transform: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ext-link{
+    max-width: 350px;
+  }
+  .contact-info{
+    grid-template-columns: auto;
+    justify-items: center;
   }
 }
