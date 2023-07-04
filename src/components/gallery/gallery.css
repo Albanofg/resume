@@ -17,7 +17,7 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.5s ease-out;
-  box-shadow: rgba(196, 156, 116, 0.4) 0px 2px 4px, rgba(196, 156, 116, 0.3) 0px 7px 13px -3px, rgba(196, 156, 116, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(196, 156, 116, 0.4) 0px 2px 4px, rgba(196, 156, 116, 0.3) 1px 7px 13px -3px, rgba(196, 156, 116, 0.2) 1px -3px 0px inset;
 }
 
 .cards:hover{
@@ -71,3 +71,55 @@
   z-index: 1;
   margin-top: 35px;
 }
+
+
+@media screen and (max-width: 1125px){
+
+  .gallery{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .imgCards{
+    object-fit: none;
+  }
+  .cards{
+    width: 520px
+  }
+  .info{
+    opacity: 1;
+    background-color: rgba(196, 156, 116, 0.61);
+  }
+}
+
+@media screen and (max-width: 820px){
+
+  .gallery{
+    padding: 10em 0 10em 0;
+    width: 100%;
+    margin: 0;
+    padding: 10em 0 0 0;
+  }
+  .cards{
+    max-width: 390px;
+    box-shadow: none;
+    overflow: auto;
+    border-radius: 2px;
+  }
+  .info{
+    max-width: 390px;
+  }
+  .icon{
+    max-width: 390px;
+  }
+  .txtInfo{
+    max-width: 390px;
+  }
+  .imgCards{
+    max-width: 390px;
+    object-fit: cover;
+  }
+}
+
+
