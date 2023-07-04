@@ -10,7 +10,7 @@ const Gallery = () => {
   return (
     <div className="gallery">
          
-      <a href="https://github.com/Albanofg/tienda-fotos" target="_blank">
+      <a href="https://github.com/Albanofg/tienda-fotos" target="_blank" rel="noopener noreferrer">
         <div className="cards">
           <div className="info">
             <i className="icon"><FaReact/></i>
@@ -20,7 +20,7 @@ const Gallery = () => {
         </div>
       </a>
       
-      <a href="https://github.com/Albanofg/TonicoHnos" target="_blank">
+      <a href="https://github.com/Albanofg/TonicoHnos" target="_blank" rel="noopener noreferrer">
         <div className="cards">
           <div className="info">
             <i className="icon"><SiJavascript/></i>
@@ -30,7 +30,7 @@ const Gallery = () => {
         </div>
       </a>
 
-      <a href="https://github.com/Albanofg/resume" target="_blank">
+      <a href="https://github.com/Albanofg/resume" target="_blank" rel="noopener noreferrer">
         <div className="cards">
           <div className="info">
             <i className="icon"><GoBriefcase/></i>
@@ -40,7 +40,7 @@ const Gallery = () => {
         </div>
       </a>
 
-      <a href="https://drive.google.com/file/d/1k5qSbrR5Olx3V4mEHc62gGF83HUyh44J/view?usp=sharing" target='_blank'>
+      <a href="https://drive.google.com/file/d/1k5qSbrR5Olx3V4mEHc62gGF83HUyh44J/view?usp=sharing" target='_blank' rel="noopener noreferrer">
         <div className="cards">
           <div className='info'>
             <i className="icon"><BsFillShieldLockFill/></i>

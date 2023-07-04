@@ -2,9 +2,6 @@ import React from 'react';
 import './about.css';
 import { Link } from 'react-router-dom';
 import { GrDocumentDownload } from 'react-icons/gr';
-import  CySecCert  from '../../assets/64179e4ae975eb00028b9d42.png';
-import  ReactCert  from '../../assets/634dd964d0bb0c000f95b118.png';
-import  JsCert  from '../../assets/61a4ce0809aaf70036f70ac4.png';
 
 const About = () => {
 
@@ -33,22 +30,22 @@ const About = () => {
           
           <li className='diplo'>
             <h4>Ciberseguridad</h4>
-            <Link to='https://www.coderhouse.com/certificados/64179e4ae975eb00028b9d42' target='blank'>
-              <img className='imgDiplo' src={CySecCert} alt='Ciberseguridad'/>
+            <Link to='https://www.coderhouse.com/certificados/64179e4ae975eb00028b9d42' target='blank' rel="noopener noreferrer">
+              <img className="imgDiplo" src="https://www.mediafire.com/convkey/58da/5hjuefmct4k8cw99g.jpg" alt="CySec"/>
             </Link>
           </li>
           
           <li className='diplo'>
             <h4>React JS</h4>
-            <Link to='https://www.coderhouse.com/certificados/634dd964d0bb0c000f95b118' target='blank'>
-              <img className='imgDiplo' src={ReactCert} alt='ReactJS'/>
+            <Link to='https://www.coderhouse.com/certificados/634dd964d0bb0c000f95b118' target='blank' rel="noopener noreferrer">
+              <img className="imgDiplo" src="https://www.mediafire.com/convkey/8039/kgb9eikfpl6za9xzg.jpg" alt="ReactJS"/>
             </Link>
           </li>
           
           <li className='diplo'>
             <h4>Javascript</h4>
-            <Link to='https://www.coderhouse.com/certificados/61a4ce0809aaf70036f70ac4' target='blank'>
-              <img className='imgDiplo' src={JsCert} alt='Javascript'/>
+            <Link to='https://www.coderhouse.com/certificados/61a4ce0809aaf70036f70ac4' target='blank' rel="noopener noreferrer">              
+              <img className="imgDiplo" src="https://www.mediafire.com/convkey/b508/piklgk33ke9w7iq9g.jpg" alt="Javascript"/>
             </Link>
           </li>
         
