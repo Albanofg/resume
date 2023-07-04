@@ -2,7 +2,7 @@ import './contact.css'
 import React from 'react'
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BiMailSend } from "react-icons/bi";
-import { AiTwotonePhone } from "react-icons/ai";
+import { BiPhoneCall } from "react-icons/bi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { BsGithub } from "react-icons/bs";
 
@@ -22,7 +22,7 @@ const Contact = () => {
           </a>
         
           <a className='ext-link' href='tel:+543407411721' target="_blank" rel="noreferrer">
-            <i className='card-icon'><AiTwotonePhone/></i>
+            <i className='card-icon'><BiPhoneCall/></i>
             <p>Tel +54 3407 411721</p>
           </a>
 

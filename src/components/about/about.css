@@ -18,6 +18,7 @@
 
 .leftOne p{
   padding: 2em 2em 1em 2em;
+  font-size: 18px;
 }
 
 .leftTwo{
@@ -91,7 +92,7 @@
 
 .imgDiplo:hover{
   transform: scale(1.05);
-  transition: ease 800ms;
+  transition: all 0.5s ease-in-out ;
 }
 
 @media screen and (max-width: 900px) {
@@ -105,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 918px) {
 
   .about {
     padding-top: 10rem;
@@ -125,11 +126,13 @@
 
   .leftTwo {
     padding: 2em 0 2em 0 ;
+    
   }
 
   .dBtn {
     height: 8em;
     width: 8em;
+    font-size: 20px;
   }
 
   .dIcon{
@@ -138,5 +141,11 @@
 
   .dBtn p{
     opacity: 1;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .leftTwo{
+    margin-bottom: 8em;
   }
 }

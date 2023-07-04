@@ -21,7 +21,7 @@ const About = () => {
       <article className='leftTwo'>
         <Link className='dBtn' to="/CV23.pdf" target="_blank" download>
           <i className='dIcon'><GrDocumentDownload/></i>
-          <p>DESCARGA MI CV</p>
+          <p>Descarga mi CV</p>
         </Link>
       </article>
       

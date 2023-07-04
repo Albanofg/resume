@@ -13,7 +13,6 @@ function App() {
       <BrowserRouter>
         <React.Fragment>
           <div className='App'>
-            <>
               <Navbar/>
               <Routes>
                 <Route path='/' element={<Home/>} />  
@@ -23,7 +22,6 @@ function App() {
                 {/* <Route path='*' element={<PaginaError/>} /> */}
               </Routes>
               <Footer/>
-            </>
           </div>
         </React.Fragment>
       </BrowserRouter>

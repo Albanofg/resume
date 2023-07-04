@@ -1,0 +1,73 @@
+.gallery{
+  height: 82.3vh;
+  background: rgb(20, 18, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 250px;
+  width: 250px;
+  margin: 0 5px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  box-shadow: rgba(196, 156, 116, 0.4) 0px 2px 4px, rgba(196, 156, 116, 0.3) 0px 7px 13px -3px, rgba(196, 156, 116, 0.2) 0px -3px 0px inset;
+}
+
+.cards:hover{
+  width: 520px;
+  box-shadow: rgba(196, 156, 116, 0.56) 2px 4px 24px 4px;
+}
+
+.imgCards{
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  object-fit: cover;
+  max-width: 520px;
+}
+
+.info{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+  object-fit: cover;
+  max-width: 520px;
+  background-color: rgba(196, 156, 116, 0.897);
+  z-index: 1;
+  opacity: 0;
+}
+
+.info:hover{
+  opacity: 1;
+}
+
+.icon{
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 35px;
+  color: rgb(204, 204, 204);
+  border-radius: 50%;
+  transition: 0.3s linear;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+.txtInfo{
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  color: rgb(204, 204, 204);
+  transition: 0.3s linear;
+  z-index: 1;
+  margin-top: 35px;
+}

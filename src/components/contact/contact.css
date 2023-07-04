@@ -11,6 +11,7 @@
   );
   grid-auto-rows:auto;
   gap: 3rem;  
+  padding: 15em 5em 0 5em;
 }
 
 .ext-link{
@@ -59,9 +60,10 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1120px) {
   .contact-info{
     min-height: 82.8vh;
+    padding: 0 2em 0 2em;
   }
 
   .ext-link{
@@ -78,7 +80,7 @@
 
 @media screen and (max-width: 768px){
   .contact-info{
-    padding-top: 10rem;
+    padding: 10rem 0 4em 0;
     max-width: 100%;
     gap: 3rem;
 
