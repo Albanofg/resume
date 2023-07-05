@@ -15,7 +15,7 @@
     font-weight: 100;
     color: rgb(255, 255, 255);    
     opacity: 0.8;
-    animation: blink 1s infinite;
+    animation: blink 0.7s infinite;
   }
   
   @keyframes blink {
