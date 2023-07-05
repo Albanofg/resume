@@ -14,13 +14,13 @@ function App() {
         <React.Fragment>
           <div className='App'>
               <Navbar/>
-              <Routes>
-                <Route path='/' element={<Home/>} />  
-                <Route path='/gallery' element={<Gallery/>} />
-                <Route path='/contacto' element={<Contact/>} />
-                <Route path='/about' element={<About/>} />
-                {/* <Route path='*' element={<PaginaError/>} /> */}
-              </Routes>
+                <Routes>
+                  <Route path='/' element={<Home/>} />  
+                  <Route path='/gallery' element={<Gallery/>} />
+                  <Route path='/contacto' element={<Contact/>} />
+                  <Route path='/about' element={<About/>} />
+                  {/* <Route path='*' element={<PaginaError/>} /> */}
+                </Routes>
               <Footer/>
           </div>
         </React.Fragment>

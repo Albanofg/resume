@@ -4,8 +4,11 @@ import { Link, NavLink } from 'react-router-dom';
 import "./navbar.css";
 
 function Navbar() {
+
   const [active, setActive] = useState("menu");
+  
   const [icon, setIcon] = useState("toggler");
+  
   const navToggle = () => {
     if (active === "menu") {
       setActive("menu menu-active");
@@ -15,6 +18,19 @@ function Navbar() {
       setIcon("toggler toggle");
     } else setIcon("toggler");
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
+  const handleClick =()=>{
+    scrollToTop();
+    navToggle();
+  }
+
+
   return (
     <nav className="nav">
       <Link to='/'>
@@ -22,13 +38,13 @@ function Navbar() {
       </Link>
       <ul className={active}>
         <li>
-          <NavLink onClick={navToggle} activeclassname='active' to='/about'>sobre mi</NavLink>
+          <NavLink onClick={handleClick} activeclassname='active' to='/about'>sobre mi</NavLink>
         </li>
         <li>
-          <NavLink onClick={navToggle} activeclassname='active' to='/contacto'>contacto</NavLink>
+          <NavLink onClick={handleClick} activeclassname='active' to='/contacto'>contacto</NavLink>
         </li>
         <li>
-          <NavLink onClick={navToggle} activeclassname='active' to='/gallery'>portfolio</NavLink>
+          <NavLink onClick={handleClick} activeclassname='active' to='/gallery'>portfolio</NavLink>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>
