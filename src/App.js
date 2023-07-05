@@ -6,6 +6,7 @@ import Contact from './components/contact/contact';
 import About from './components/about/about';
 import Gallery from './components/gallery/gallery';
 import Footer from './components/fakeFooter/footer';
+import PaginaError from './components/error/error';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
                   <Route path='/gallery' element={<Gallery/>} />
                   <Route path='/contacto' element={<Contact/>} />
                   <Route path='/about' element={<About/>} />
-                  {/* <Route path='*' element={<PaginaError/>} /> */}
+                  <Route path='*' element={<PaginaError/>} />
                 </Routes>
               <Footer/>
           </div>

@@ -1,0 +1,19 @@
+.error {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 82.3vh;
+    background-color: rgb(20, 18, 17);
+  }
+
+  @media screen and (max-width: 728px) {
+    .error {
+      font-size: 14px;
+      height: 115vh;
+    }
+  }
