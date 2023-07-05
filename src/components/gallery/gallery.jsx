@@ -1,20 +1,36 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import './gallery.css'
 import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { GoBriefcase } from "react-icons/go";
+import Preloader from '../loader/loader';
 
 
 const Gallery = () => {
+
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 700);
+  }, []);
+
   return (
+
+    <div>
+      {loading ? <Preloader/> :
+    
     <div className="gallery">
          
       <a href="https://github.com/Albanofg/tienda-fotos" target="_blank" rel="noopener noreferrer">
         <div className="cards">
           <div className="info">
             <i className="icon"><FaReact/></i>
-            <p className="txtInfo">Código en GitHub de mi proyecto final <br /> para el curso de ReactJs de CoderHouse</p>
+            <p className="txtInfo">Código en GitHub de mi proyecto final para el curso de ReactJs de CoderHouse</p>
           </div>
           <img className="imgCards" src="https://www.mediafire.com/convkey/82d6/v1e0ib9o22eyawr9g.jpg" alt="ReactJs"/>
         </div>
@@ -24,7 +40,7 @@ const Gallery = () => {
         <div className="cards">
           <div className="info">
             <i className="icon"><SiJavascript/></i>
-            <p className="txtInfo">Código en GitHub de mi proyecto final <br /> para el curso de Javascript de CoderHouse</p>
+            <p className="txtInfo">Código en GitHub de mi proyecto final para el curso de Javascript de CoderHouse</p>
           </div>
           <img className="imgCards" src="https://www.mediafire.com/convkey/80f8/e4cobhttvkkjbia9g.jpg" alt="Javascript"/>
         </div>
@@ -44,13 +60,15 @@ const Gallery = () => {
         <div className="cards">
           <div className='info'>
             <i className="icon"><BsFillShieldLockFill/></i>
-            <p className="txtInfo">Análisis final para el curso de <br /> Ciberseguridad de CoderHouse</p>
+            <p className="txtInfo">Análisis final para el curso de Ciberseguridad de CoderHouse</p>
           </div>
           <img className="imgCards" src="https://www.mediafire.com/convkey/1f79/hkjvc0dbk559e3bzg.jpg" alt="CySec"/>
         </div>
       </a>
       
     </div> 
+    }
+  </div>
   )
 }
 

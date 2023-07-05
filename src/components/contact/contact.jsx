@@ -1,13 +1,27 @@
 import './contact.css'
 import React from 'react'
+import { useState, useEffect } from 'react';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BiMailSend } from "react-icons/bi";
 import { BiPhoneCall } from "react-icons/bi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { BsGithub } from "react-icons/bs";
+import Preloader from '../loader/loader';
 
 const Contact = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 700);
+  }, []);
+
   return (
+
+    <div>
+      { loading ? <Preloader/> :
           
     <div className='contact-info'>
              
@@ -37,6 +51,8 @@ const Contact = () => {
           </a>
 
     </div>
+    }
+  </div>
   )
 }
 

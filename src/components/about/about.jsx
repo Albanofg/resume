@@ -1,11 +1,23 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './about.css';
 import { Link } from 'react-router-dom';
 import { GrDocumentDownload } from 'react-icons/gr';
+import Preloader from '../loader/loader';
 
 const About = () => {
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 800);
+  }, []);
+
   return (
+    <div>
+      {loading ? <Preloader/> :
 
     <div className='about'>
 
@@ -51,6 +63,8 @@ const About = () => {
         
         </ul>
       </article>
+    </div>
+    }
     </div>
   )
 }
