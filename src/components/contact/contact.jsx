@@ -40,7 +40,7 @@ const Contact = () => {
             <p>Tel +54 3407 411721</p>
           </a>
 
-          <a className='ext-link' href='https://www.linkedin.com/in/albano-gonzalez-8a3492226/' target="_blank" rel="noopener noreferrer">
+          <a className='ext-link' href='https://www.linkedin.com/in/albanofgonzalez/' target="_blank" rel="noopener noreferrer">
             <i className='card-icon'><SlSocialLinkedin/></i>
             <p>LinkedIn</p>
           </a>
