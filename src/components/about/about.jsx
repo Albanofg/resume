@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './about.css';
 import { Link } from 'react-router-dom';
-import { GrDocumentDownload } from 'react-icons/gr';
+import { FaFileDownload } from "react-icons/fa";
 import Preloader from '../loader/loader';
 
 const About = () => {
@@ -29,9 +29,9 @@ const About = () => {
       
       <article className='leftTwo'>
         <Link className='dBtn' to="/CV23.pdf" target="_blank" download>
-          <i className='dIcon'><GrDocumentDownload/></i>
-          <p>Descarga mi CV</p>
+          <i className='dIcon'><FaFileDownload /></i>
         </Link>
+        <p>Descarga mi CV</p>
       </article>
       
       <article className='rightOne'>
